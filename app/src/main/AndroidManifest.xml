@@ -5,11 +5,11 @@
 
     <application
         android:allowBackup="false"
-        android:label="PURPLELOCK"
+        android:label="PURPLELOCK FACE TEST"
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".FaceTestActivity""
             android:exported="true">
 
             <intent-filter>

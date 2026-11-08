@@ -13,6 +13,20 @@ android {
         versionCode 1
         versionName '1.0'
     }
+
+flavorDimensions 'mode'
+
+productFlavors {
+    mainApp {
+        dimension 'mode'
+    }
+
+    faceTest {
+        dimension 'mode'
+        applicationIdSuffix '.facetest'
+        versionNameSuffix '-facetest'
+    }
+}
 }
 
 dependencies {

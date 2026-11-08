@@ -1,4 +1,4 @@
-name: Build PURPLELOCK APK
+name: Build PURPLELOCK Face Test APK
 
 on:
   workflow_dispatch:
@@ -33,11 +33,11 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Build APK
-        run: gradle assembleDebug
+      - name: Build Face Test APK
+        run: gradle assembleFaceTestDebug
 
-      - name: Upload APK
+      - name: Upload Face Test APK
         uses: actions/upload-artifact@v4
         with:
-          name: PURPLELOCK-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: PURPLELOCK-FACE-TEST
+          path: app/build/outputs/apk/faceTest/debug/app-faceTest-debug.apk
