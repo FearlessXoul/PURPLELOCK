@@ -143,8 +143,9 @@ public class FaceTestActivity extends AppCompatActivity {
 
         if (result != BiometricManager.BIOMETRIC_SUCCESS) {
             message.setText(
-                "FACE AUTHENTICATION NOT AVAILABLE.\n" +
-                "Your device may not expose Face Unlock to apps."
+                "BIOMETRIC AUTHENTICATION UNAVAILABLE.\n\n" +
+                "ANDROID STATUS CODE: " + result + "\n\n" +
+                "We need this code to identify the exact restriction."
             );
             return;
         }
