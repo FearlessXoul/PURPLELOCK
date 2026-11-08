@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:label="PURPLELOCK FACE TEST">
+        android:label="PURPLELOCK FACE TEST"
+        tools:replace="android:label">
 
         <activity
             android:name=".MainActivity"
